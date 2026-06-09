@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Las reglas del internet</title>
+</head>
+<body>
+
+    <h1>Las reglas del internet</h1>
+
+    <!-- parte1:W3C -->
+    <h2>La W3C (World Wide Web Consortium)</h2>
+
+    <h3>¿Que es?</h3>
+    <p>
+        <font>La W3C es un consorcio internacional fundado en 1994 por Tim Berners-Lee (el mismísimo inventor de la Web). Está integrado por organizaciones miembro, personal a tiempo completo y el público en general, quienes trabajan juntos para desarrollar estándares web.</font>
+    </p>
+    <h3>¿Por qué son los encargados de poner las reglas?</h3>
+    <p>
+        <font>No es que la W3C sea una "policía" con poder legal, sino que el ecosistema tecnológico les otorgó esa autoridad por una necesidad histórica: la interoperabilidad.
+
+Evitar la guerra de navegadores: En los años 90, Microsoft (Internet Explorer) y Netscape creaban sus propias etiquetas HTML a su antojo. Si programabas para uno, la web se rompía en el otro.
+
+El consenso global: La W3C nació para que creadores de navegadores, desarrolladores y científicos se sentaran en la misma mesa a acordar un "idioma único".
+
+Recomendaciones oficiales: Lo que la W3C publica no son leyes, son Recomendaciones. Sin embargo, los navegadores (Google Chrome, Safari, Firefox) las siguen rigurosamente porque les conviene que toda la web funcione igual en cualquier pantalla.</font>
+    </p>
+
+    <!-- parte2:accesibilidad web -->
+    <h2>Accesibilidad Web (WAI-ARIA)</h2>
+
+    <h3>¿Por qué es una obligación ética y técnica?</h3>
+    <p>
+        <font>Dimensión Ética: La web se diseñó para ser universal. Excluir a personas con discapacidades visuales, motrices, auditivas o cognitivas es el equivalente digital a construir un edificio público sin rampas de acceso. La información y los servicios digitales son un derecho básico.
+
+Dimensión Técnica: Un código accesible suele ser sinónimo de un código robusto, semántico y bien estructurado. Además, en muchos países ya existen normativas legales (como la sección 508 en EE. UU. o las directivas de la Unión Europea) que sancionan económicamente a las empresas cuyas webs no sean accesibles.</font>
+    </p>
+    <h3>EJEMPLOS:</h3>
+    <ol>
+        <li>Uso de atributos aria-live para contenido dinámico: Si una página actualiza un marcador deportivo o un carrito de compras mediante JavaScript sin recargar la página, un usuario ciego no lo sabrá. Al usar aria-live="polite", el lector de pantalla le notificará verbalmente al usuario que algo cambió en el contenido.</li>
+        <li>Navegación completa mediante el teclado (Focus Management): Las personas con discapacidades motrices severas no usan ratón; navegan usando la tecla Tab. Se logra asegurando que todos los elementos interactivos (botones, enlaces) tengan un estado :focus visual claro y un orden lógico en el código para que el cursor no se "pierda" o quede atrapado.</li>
+    </ol>
+
+    <!-- parte3:SEO -->
+    <h2>SEO (Optimización en Buscadores)</h2>
+
+    <h3>¿Cómo ayuda un código HTML limpio y ordenado?</h3>
+
+    <p>
+        <font>Google no ve tu página web como un humano lleno de colores y animaciones; la lee a través de bots (Googlebot) que rastrean el código fuente de arriba a abajo. Un HTML limpio y semántico ayuda de las siguientes formas:
+
+Facilidad de rastreo (Crawl Budget): Los bots tienen un tiempo límite para leer tu web. Si el código está lleno de errores, etiquetas mal cerradas o texto basura, el bot se cansa, indexa menos páginas y se va. Un código limpio le ahorra "trabajo" a Google.
+
+Jerarquía clara: El uso correcto de etiquetas semánticas (header, nav, main, article, footer) y la jerarquía de títulos (¨h1¨ para el tema principal, ¨h2¨ para secciones) le dice exactamente a Google de qué trata tu página y qué partes son las más importantes.</font>
+    </p>
+
+    <!-- parte4:etiquetas -->
+    <h2>Las etiquetas</h2>
+    <p>
+        <font>Estas etiquetas no muestran contenido visual en la pantalla, pero le dan instrucciones cruciales al navegador y a los buscadores sobre cómo procesar la página.</font>
+    </p>
+    <ul>
+        <li>-meta charset="UTF-8"-
+Sirve para definir la codificación de caracteres de la página web. UTF-8 es el estándar universal que incluye prácticamente todos los caracteres de todos los idiomas del mundo.
+
+Para qué sirve: Garantiza que el navegador muestre correctamente las letras con acentos (á, é), la eñe (ñ), signos de interrogación abiertos (¿) o emojis. Si no la pones, es muy probable que tu texto se rompa y muestre símbolos extraños como Ao en lugar de Año.</li>
+        <li>-meta name="viewport" content="width=device-width, initial-scale=1.0"-
+Es la llave maestra para el Diseño Responsivo (diseño adaptado a móviles).
+
+Para qué sirve: Le dice al navegador del teléfono móvil que adapte el ancho de la página al ancho de la pantalla del dispositivo (width=device-width) y que no aplique ningún zoom inicial (initial-scale=1.0). Sin esta etiqueta, los smartphones renderizarán la web como si fuera una pantalla de computadora gigante, obligando al usuario a hacer "pellizco para hacer zoom" para poder leer el texto.</li>
+    </ul>
+
+</body>
+</html>
